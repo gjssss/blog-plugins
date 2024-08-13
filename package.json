@@ -2,7 +2,7 @@
   "name": "@blog-plugins-gjs/resume-gjs",
   "version": "1.0.1",
   "description": "Resume for GJS",
-  "repository": "https://github.com/gjssss/blog-plugins/tree/resume-gjs",
+  "repository": "git+https://github.com/gjssss/blog-plugins/tree/resume-gjs",
   "license": "MIT",
   "type": "module",
   "exports": {
