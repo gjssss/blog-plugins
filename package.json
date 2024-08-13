@@ -22,7 +22,7 @@
     "dev": "nuxi dev playground",
     "dev:build": "nuxi build playground",
     "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare playground",
-    "release": "npm run lint && npm run test && npm run prepack && changelogen --release && npm publish --registry=https://registry.npmjs.org/",
+    "release": "npm run lint && npm run test && npm run prepack && changelogen --release && npm publish",
     "lint": "eslint .",
     "test": "vitest run",
     "test:watch": "vitest watch",
@@ -44,5 +44,9 @@
     "typescript": "latest",
     "vitest": "^2.0.3",
     "vue-tsc": "^2.0.26"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }
