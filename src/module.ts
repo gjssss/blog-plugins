@@ -15,7 +15,7 @@ export default defineNuxtModule<ModuleOptions>({
     // Do not add the extension since the `.ts` will be transpiled to `.mjs` after `npm run prepack`
     addLayout({
       src: resolver.resolve('./runtime/layouts/resume.vue'),
-    })
+    }, 'resume')
     extendPages((pages) => {
       pages.unshift({
         name: 'resume',
