@@ -1,6 +1,6 @@
 {
   "name": "resume-gjs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Resume for GJS",
   "repository": "your-org/@blog-plugins-gjs/resume-gjs",
   "license": "MIT",
@@ -22,7 +22,7 @@
     "dev": "nuxi dev playground",
     "dev:build": "nuxi build playground",
     "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare playground",
-    "release": "npm run lint && npm run test && npm run prepack && changelogen --release && npm publish && git push --follow-tags",
+    "release": "npm run lint && npm run test && npm run prepack && changelogen --release && npm publish --registry=https://registry.npmjs.org/",
     "lint": "eslint .",
     "test": "vitest run",
     "test:watch": "vitest watch",
