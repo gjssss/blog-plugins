@@ -2,7 +2,7 @@
   "name": "@blog-plugins-gjs/my-module",
   "version": "1.0.0",
   "description": "My new Nuxt module",
-  "repository": "https://github.com/gjssss/blog-plugins/tree/master",
+  "repository": "git+https://github.com/gjssss/blog-plugins/tree/master",
   "license": "MIT",
   "type": "module",
   "exports": {
