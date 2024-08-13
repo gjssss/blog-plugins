@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "my-module-playground",
+  "name": "@blog-plugins-gjs/my-module-playground",
   "type": "module",
   "scripts": {
     "dev": "nuxi dev",

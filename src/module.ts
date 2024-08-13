@@ -5,7 +5,7 @@ export interface ModuleOptions {}
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {
-    name: 'my-module',
+    name: '@blog-plugins-gjs/my-module',
     configKey: 'myModule',
   },
   // Default configuration options of the Nuxt module
