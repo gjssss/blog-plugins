@@ -2,7 +2,7 @@
 import { definePageMeta } from '#imports'
 
 definePageMeta({
-  layout: 'layouts-resume-f991a93c',
+  layout: 'resume',
 })
 </script>
 
