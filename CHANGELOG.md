@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.1.0
+
+[compare changes](https://github.com/gjssss/blog-plugins/compare/v1.0.4...v1.1.0)
+
+### 🚀 Enhancements
+
+- Add page ([df17471](https://github.com/gjssss/blog-plugins/commit/df17471))
+
+### ❤️ Contributors
+
+- Gjssss ([@gjssss](http://github.com/gjssss))
+
 ## v1.0.4
 
 [compare changes](https://github.com/gjssss/blog-plugins/compare/v1.0.2...v1.0.4)
