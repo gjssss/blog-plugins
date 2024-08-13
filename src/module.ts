@@ -1,4 +1,4 @@
-import { defineNuxtModule, addPlugin, createResolver } from '@nuxt/kit'
+import { defineNuxtModule, createResolver, addLayout, extendPages } from '@nuxt/kit'
 
 // Module options TypeScript interface definition
 export interface ModuleOptions {}
@@ -6,7 +6,6 @@ export interface ModuleOptions {}
 export default defineNuxtModule<ModuleOptions>({
   meta: {
     name: '@blog-plugins-gjs/resume-gjs',
-    configKey: 'myModule',
   },
   // Default configuration options of the Nuxt module
   defaults: {},
@@ -14,6 +13,15 @@ export default defineNuxtModule<ModuleOptions>({
     const resolver = createResolver(import.meta.url)
 
     // Do not add the extension since the `.ts` will be transpiled to `.mjs` after `npm run prepack`
-    addPlugin(resolver.resolve('./runtime/plugin'))
+    addLayout({
+      src: resolver.resolve('./runtime/layouts/resume.vue'),
+    })
+    extendPages((pages) => {
+      pages.unshift({
+        name: 'resume',
+        path: '/resume',
+        file: resolver.resolve('./runtime/resume.vue'),
+      })
+    })
   },
 })
