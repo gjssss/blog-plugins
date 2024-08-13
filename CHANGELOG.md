@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.1.1
+
+[compare changes](https://github.com/gjssss/blog-plugins/compare/v1.1.0...v1.1.1)
+
+### 🩹 Fixes
+
+- Layout name ([5437f77](https://github.com/gjssss/blog-plugins/commit/5437f77))
+
+### ❤️ Contributors
+
+- Gjssss ([@gjssss](http://github.com/gjssss))
+
 ## v1.1.0
 
 [compare changes](https://github.com/gjssss/blog-plugins/compare/v1.0.4...v1.1.0)

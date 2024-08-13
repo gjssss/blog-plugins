@@ -1,6 +1,6 @@
 {
   "name": "@blog-plugins-gjs/resume-gjs",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Resume for GJS",
   "repository": "git+https://github.com/gjssss/blog-plugins/tree/resume-gjs",
   "license": "MIT",
