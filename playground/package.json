@@ -1,13 +1,46 @@
 {
-  "private": true,
-  "name": "@blog-plugins-gjs/my-module-playground",
   "type": "module",
+  "private": true,
+  "packageManager": "pnpm@9.6.0",
   "scripts": {
-    "dev": "nuxi dev",
     "build": "nuxi build",
-    "generate": "nuxi generate"
+    "dev:pwa": "VITE_PLUGIN_PWA=true nuxi dev",
+    "dev": "nuxi dev",
+    "generate": "nuxi generate",
+    "postinstall": "nuxi prepare",
+    "start": "node .output/server/index.mjs",
+    "start:generate": "npx serve .output/public",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "typecheck": "vue-tsc --noEmit"
   },
   "dependencies": {
-    "nuxt": "^3.12.4"
+    "@nuxt/content": "^2.13.2",
+    "dayjs": "^1.11.12",
+    "nuxt-content-twoslash": "^0.1.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "2.25.1",
+    "@blog-plugins-gjs/resume-gjs": "1.1.1",
+    "@iconify-json/carbon": "^1.1.36",
+    "@iconify-json/twemoji": "^1.1.15",
+    "@nuxtjs/color-mode": "^3.4.2",
+    "@pinia/nuxt": "^0.5.1",
+    "@types/lodash-es": "^4.17.12",
+    "@unocss/eslint-config": "^0.61.5",
+    "@unocss/nuxt": "^0.61.5",
+    "@vueuse/nuxt": "^10.11.0",
+    "consola": "^3.2.3",
+    "eslint": "npm:eslint-ts-patch@^8.56.0-0",
+    "eslint-plugin-format": "^0.1.2",
+    "eslint-ts-patch": "^8.56.0-0",
+    "lodash-es": "^4.17.21",
+    "nuxt": "^3.12.4",
+    "nuxt-module-eslint-config": "^0.1.1",
+    "pinia": "^2.1.7",
+    "sass": "^1.77.8",
+    "shiki": "^1.11.2",
+    "typescript": "^5.5.4",
+    "vue-tsc": "^2.0.29"
   }
 }
