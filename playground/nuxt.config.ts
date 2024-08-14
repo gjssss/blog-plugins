@@ -40,10 +40,6 @@ export default defineNuxtConfig({
   app: {
     head: {
       viewport: 'width=device-width,initial-scale=1',
-      link: [
-        { rel: 'icon', href: '/favicon.ico', sizes: 'any' },
-        { rel: 'icon', type: 'image/svg+xml', href: '/icon.svg' },
-      ],
       meta: [
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { name: 'description', content: 'Index Webside' },
@@ -91,5 +87,10 @@ export default defineNuxtConfig({
   twoslash: {
   },
 
+  runtimeConfig: {
+    public: {
+      navigation: [],
+    },
+  },
   compatibilityDate: '2024-07-26',
 })

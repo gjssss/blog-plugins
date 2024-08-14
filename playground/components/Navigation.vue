@@ -18,11 +18,8 @@ const { data: navigation } = await useAsyncData('nav', async () => {
       >
         {{ item.title }}
       </NuxtLink>
-      <!-- <NuxtLink href="/resume" target="_blank">
-        简历
-      </NuxtLink> -->
       <nuxt-link
-        to="https://github.com/gjssss"
+        to="https://github.com/gjssss/blog-plugins"
         target="_blank"
       >
         <div class="i-carbon-logo-github cursor-pointer text-5" />
